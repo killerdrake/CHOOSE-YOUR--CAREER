@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBC Career & Senior School Matcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Career Pathways & Senior School Recommendation Engine</h1>
+    <p>Discover your ideal CBC Senior School pathway based on your strengths, tasks, and interests.</p>
+  </header>
+
+  <main>
+    <form id="careerForm">
+      <!-- Module 1: Strengths & Tasks -->
+      <section class="card">
+        <h2>1. Hobbies & Core Strengths</h2>
+        <label>What daily task activity do you enjoy the most?</label>
+        <select id="taskPreference" required>
+          <option value="">Select an option</option>
+          <option value="stem">Solving math puzzles, coding, or building things</option>
+          <option value="social">Debating, writing stories, or learning languages</option>
+          <option value="arts">Drawing, performing arts, or playing sports</option>
+        </select>
+      </section>
+
+      <!-- Module 2: Values -->
+      <section class="card">
+        <h2>2. Career Value & Personality</h2>
+        <label>How do you prefer to interact and work?</label>
+        <select id="workStyle" required>
+          <option value="">Select an option</option>
+          <option value="stem">Technical precision & scientific inquiry</option>
+          <option value="social">Community engagement, business & leadership</option>
+          <option value="arts">Creative expression & physical movement</option>
+        </select>
+      </section>
+
+      <!-- Module 3: Skills -->
+      <section class="card">
+        <h2>3. Daily Skill Commitment</h2>
+        <label>Which skill set are you ready to invest 13 min/day building?</label>
+        <select id="skillFocus" required>
+          <option value="">Select an option</option>
+          <option value="stem">Computer languages, logic, or science labs</option>
+          <option value="social">Foreign languages, humanities, or finance</option>
+          <option value="arts">Music theory, sports coaching, or visual design</option>
+        </select>
+      </section>
+
+      <button type="submit" id="submitBtn">Generate Career & School Match</button>
+    </form>
+
+    <!-- Results Section -->
+    <section id="results" class="card hidden">
+      <h2>Your Career Pathway Match</h2>
+      <div id="pathwayOutput"></div>
+      
+      <h3>Recommended Senior School Subjects</h3>
+      <ul id="subjectsOutput"></ul>
+
+      <h3>KEMIS Placement Strategy</h3>
+      <p id="kemisStrategy"></p>
+
+      <a id="kemisLink" href="https://selection-placement.kemis.go.ke/pathways?pathway=SOCIAL+SCIENCES" target="_blank" rel="noopener">
+        Visit Official KEMIS Portal
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
