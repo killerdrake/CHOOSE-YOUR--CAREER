@@ -1,0 +1,71 @@
+:root {
+  --primary: #1e3a8a;
+  --secondary: #2563eb;
+  --bg: #f8fafc;
+  --text: #0f172a;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+select, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: var(--secondary);
+}
+
+.hidden {
+  display: none;
+}
+
+#kemisLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: underline;
+}
